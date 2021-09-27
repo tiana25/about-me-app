@@ -1,0 +1,30 @@
+<mat-toolbar class="custom-toolbar">
+
+    <mat-toolbar-row fxLayoutAlign="space-between center">
+        <div fxLayout="row">
+            <button mat-button class="logo">
+                    <mat-icon>home</mat-icon>
+                    <span>Personal CV</span>
+            </button>
+            <div *ngIf="!deviceXs">
+                <button routerLink="/" mat-button class="btn">Home</button>
+                <button routerLink="/about" mat-button class="btn">About Me</button>
+                <button routerLink="/contact" mat-button class="btn">Contact Me</button>
+            </div>
+        </div>
+
+        <div>
+            <button mat-icon-button >
+                <mat-icon *ngIf="deviceXs">more_vert</mat-icon>
+                <span class="logo" *ngIf="!deviceXs">Menu</span>
+            </button>
+        </div>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
+            <button mat-button class="btn">Home</button>
+            <button mat-button class="btn">About Me</button>
+            <button mat-button class="btn">Contact Me</button>
+    </mat-toolbar-row>
+
+</mat-toolbar>

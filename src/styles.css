@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  color:#fef5ef;
+}
+body {
+  background-color: #0D1321;
+  font-family: "Poppins", sans-serif!important;
+}
+
+.custom-toolbar{
+    font-size: 15px!important;
+    font-family: inherit;
+}
+.btn {
+    display: inline-block;
+    background: linear-gradient(to right top, #757BC8, #E0C3FC);
+    color: #fef5ef;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px!important;
+    font-family: inherit;
+    margin-left:10px!important;
+  }
+
+  .btn:focus {
+    outline: none;
+  }
+  .btn:active {
+    transform: scale(0.98);
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+
+  .container {
+    max-width: 500px;
+    margin: 30px auto;
+    overflow: auto;
+    min-height: 300px;
+    /* border: 1px solid #CBB2FE; */
+    padding: 30px;
+
+    border: 5px solid skyblue;
+    border-radius: 20%;
+    border-image: linear-gradient(to right top, #757BC8, #E0C3FC);
+    border-image-slice: 3;
+  }

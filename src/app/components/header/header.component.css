@@ -1,0 +1,14 @@
+.logo{
+    padding:0px 5px;
+    font-size: 15px!important;
+    font-family: "Poppins", sans-serif!important;
+    color:#fef5ef;
+}
+.mat-toolbar{
+    background-color:#17223A;
+}
+.logo span{
+    margin-left:10px;
+    margin-right:20px;
+    color:#fef5ef;
+}

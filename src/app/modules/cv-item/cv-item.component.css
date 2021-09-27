@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+.example-card{
+    max-width:600px;
+    background-color: transparent;
+}
+.card-title{
+    font-family: "Lato", sans-serif!important;
+    font-weight: 400;
+    color:#E0C3FC;
+}
+
+.mat-card-image{
+    max-width:200px;
+    margin-left:20px;
+    border-radius: 5%;
+}
+
+.mat-card-content{
+    max-width:200px;
+    color:#fef5ef;
+    font-family: "Poppins", sans-serif!important;
+}
+::ng-deep .mat-card-header-text {
+    /* CSS styles go here */
+    margin: 0px!important;
+  }
+
+  #projects-container{
+      max-width:600px;
+      margin: 30px auto;
+      text-align:center;
+  }
