@@ -21,7 +21,7 @@ export class FeedbackComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.feedbackService.getTasks().subscribe((feedbacks)=>(this.feedbacks = feedbacks));
+    this.feedbackService.getFeedbacks().subscribe((feedbacks)=>(this.feedbacks = feedbacks));
   }
 
   deleteFeedback(feedback: Feedback){

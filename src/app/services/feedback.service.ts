@@ -19,12 +19,12 @@ const httpOptions = {
 })
 export class FeedbackService {
 
-  private apiUrl = 'http://localhost:5000/feedbacks'
-  private apiUrl2 = 'http://localhost:5000/contacts'
+  readonly apiUrl = 'http://localhost:5000/feedbacks'
+  readonly apiUrl2 = 'http://localhost:5000/contacts'
 
   constructor(private http:HttpClient) { }
 
-  getTasks(): Observable<Feedback[]>{
+  getFeedbacks(): Observable<Feedback[]>{
     return this.http.get<Feedback[]>(this.apiUrl)
   }
 
