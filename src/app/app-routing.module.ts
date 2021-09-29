@@ -7,7 +7,10 @@ const appRoutes: Routes =[
    loadChildren: () => import('./modules/about/about.module')
    .then(m => m.AboutModule) },
   { path: 'contact', loadChildren: () => import('./modules/contact/contact.module').then(m => m.ContactModule) },
-  { path: '', loadChildren: () => import('./modules/cv-item/cv-item.module').then(m => m.CvItemModule) }
+  { path: '', loadChildren: () => import('./modules/cv-item/cv-item.module').then(m => m.CvItemModule) },
+  { path: 'feedback', loadChildren: () => import('./modules/feedback/feedback.module').then(m => m.FeedbackModule) },
+  // { path: '/projects', loadChildren: () => import('./modules/cv-item/projects/projects.component').then(m => m.ProjectsComponent) }
+  
   // {path: '', component: CvItemComponent},
   // {path: 'about', component: AboutComponent},
   // {path: 'contact', component: ContactComponent}

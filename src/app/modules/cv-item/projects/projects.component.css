@@ -1,41 +1,4 @@
 
-
- .mat-card {
-    /* CSS styles go here */
-    background: linear-gradient(to right top, #757BC8, #E0C3FC)!important;
-}
-.mat-card-title{
-    color:#2B2B2B;
-}
-  
-.mat-card-image{
-    max-width:200px;
-    height:180px;
-    margin:0 auto;
-    border-radius: 10px;
-}
-
-.mat-card-content{
-    max-width:200px;
-    color:#fef5ef;
-    font-family: "Poppins", sans-serif!important;
-}
 .projects-cards-container{
     padding:20px;
-}
-.title-item{
-    font-weight:900;
-    font-size:1.5em;
-    margin-bottom:30px;
-    position:relative;
-}
-.title-item:after{
-    content:'';
-    position:absolute;
-    width:50px;
-    bottom:0;
-    height:2px;
-    left:50%;
-    margin: 0px 0px -15px -25px;
-    background: linear-gradient(to right top, #757BC8, #E0C3FC);
 }

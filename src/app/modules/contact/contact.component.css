@@ -1,32 +1,23 @@
-.form-control {
-    margin: 20px 0;
+  .center{
+    text-align:center;
   }
-  
-  .form-control label {
-    display: block;
-    color:#fef5ef;
+  .second{
+    color:#E0C3FC;
+    opacity:0.6;
   }
-  
-  .form-control input {
-    width: 100%;
-    height: 40px;
-    margin: 5px;
-    padding: 3px 7px;
-    font-size: 17px;
-    border-radius: 10px;
+
+  #submit{
+    width:100%;
   }
-  
-  .form-control-check {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+  .right{
+    margin-left:15px;
   }
-  
-  .form-control-check label {
-    flex: 1;
+  .contact{
+    margin-bottom:15px;
   }
-  
-  .form-control-check input {
-    flex: 2;
-    height: 20px;
+
+  .large-title{
+    font-size:1.2em;
+    font-weight:700;
   }

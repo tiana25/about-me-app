@@ -1,0 +1,25 @@
+
+.mat-card {
+    /* CSS styles go here */
+    background: linear-gradient(to right top, #757BC8, #E0C3FC)!important;
+}
+
+.mat-card-title{
+    color:#2B2B2B;
+}
+  
+.mat-card-image{
+    max-width:200px;
+    height:180px;
+    margin:0 auto;
+    border-radius: 10px;
+}
+
+.mat-card-content{
+    max-width:200px;
+    color:#fef5ef;
+    font-family: "Poppins", sans-serif!important;
+}
+.example-card{
+    margin-top:30px;
+}

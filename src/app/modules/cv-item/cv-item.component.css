@@ -5,16 +5,21 @@
 }
 .card-title{
     font-family: "Lato", sans-serif!important;
-    font-weight: 400;
+    font-weight: 900;
+    font-size:1.8em;
     color:#E0C3FC;
 }
-
+.cv-img{
+    margin-top:20px;
+}
 .mat-card-image{
     max-width:200px;
     margin-left:20px;
+}
+.mat-card-image:first-child{
+    margin-top:0px;
     border-radius: 5%;
 }
-
 .mat-card-content{
     max-width:200px;
     color:#fef5ef;
@@ -29,4 +34,25 @@
       max-width:600px;
       margin: 30px auto;
       text-align:center;
+  }
+
+  #contact-info{
+    margin-top:40px;
+  }
+
+  .mat-icon{
+    color:#E0C3FC;
+  }
+  #location{
+      font-family: "Poppins", sans-serif!important;
+      color:#E0C3FC;
+      padding-top:-10px;
+  }
+
+  .btn-contact span{
+    padding-right:5px;
+  }
+  .btn-contact{
+      margin-top:10px;
+      margin-left:-5px;
   }

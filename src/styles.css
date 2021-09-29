@@ -58,3 +58,73 @@ body {
     border-image: linear-gradient(to right top, #757BC8, #E0C3FC);
     border-image-slice: 3;
   }
+
+  .title-item{
+    font-weight:900;
+    font-size:1.5em;
+    margin-bottom:30px;
+    position:relative;
+}
+.title-item:after{
+    content:'';
+    position:absolute;
+    width:50px;
+    bottom:0;
+    height:2px;
+    left:50%;
+    margin: 0px 0px -15px -25px;
+    background: linear-gradient(to right top, #757BC8, #E0C3FC);
+}
+
+.subtitle-item{
+  color:#E0C3FC;
+  opacity:0.6;
+  margin-bottom:30px;
+}
+
+form{
+  text-align:left;
+}
+label{
+  margin-left:7px;
+  margin-bottom:7px;
+}
+
+
+.info{
+  text-align:left;
+  margin-left:7px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+  color:#fef5ef;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}

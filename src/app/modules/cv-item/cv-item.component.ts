@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvItemComponent implements OnInit {
 
+
+  location:string = "Kyiv, Ukraine";
+
   constructor() { }
 
   ngOnInit(): void {

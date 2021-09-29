@@ -1,32 +1,7 @@
 
-  <div class="title-item">Projects</div>
+<div class="title-item">Projects</div>
 
-<div class="projects-cards-container" fxLayout="row" fxLayoutAlign="space-around" fxLayoutGap="10px">
-    <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>ATM application</mat-card-title>
-          <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
-        </mat-card-header>
-        <img mat-card-image src="../../../../assets/img/atm_proj.png" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-          <p>
-            Creating an ATM-like system that allows the bank user to control their accounts, replenish accounts, withdraw funds, create transfers between cards (their own and others).
-          </p>
-        </mat-card-content>
-      </mat-card>
-
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Task Tracker</mat-card-title>
-          <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
-        </mat-card-header>
-        <img mat-card-image src="../../../../assets/img/task_tracker.jpg" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-          <p>
-            Task tracker app is a beautifully simple, free to do list, task list and reminder app that will help keep your busy life organized everyday.
-          </p>
-        </mat-card-content>
-      </mat-card>
+<div class="projects-cards-container" fxLayout="row wrap" 
+fxLayoutAlign="space-around space-around" fxLayoutGap="10px">
+   <app-project *ngFor="let item of projects" [item]="item"></app-project>
 </div>

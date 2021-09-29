@@ -1,0 +1,9 @@
+<div class="container center">
+    <div class="title-item">Leave Feedback!</div>
+    <app-add-feedback (onAddFeedback)="addFeedback($event)"></app-add-feedback>
+    <app-feedback-item 
+    *ngFor="let feedback of feedbacks" 
+    [feedback]="feedback"
+    (onDeleteFeedback)="deleteFeedback(feedback)"
+    ></app-feedback-item>
+</div>

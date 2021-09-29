@@ -1,4 +1,35 @@
-<div class="container">
+<div class="container center">
+    <div class="title-item">Contact Me</div>
+    <div class="subtitle-item">Get in touch</div>
+
+    <div class="info">
+        <div class="contact" fxLayout="row" fxLayoutAlign="flex-start start">
+            <mat-icon>call</mat-icon>
+            <div class="right">
+                <span class="large-title">Call me</span>
+                <br>
+                <span class="second">999 999 9</span>
+            </div>
+        </div>
+        <div class="contact" fxLayout="row" fxLayoutAlign="flex-start start">
+            <mat-icon>email</mat-icon>
+            <div class="right">
+                <span class="large-title">Email</span>
+                <br>
+                <span class="second">tianati01@gmail.com</span>
+            </div>
+        </div>
+        <div class="contact" fxLayout="row" fxLayoutAlign="flex-start start">
+            <mat-icon>location_on</mat-icon>
+            <div class="right">
+                <span class="large-title">Location</span>
+                <br>
+                <span class="second">Kyiv, Ukraine</span>
+            </div>
+        </div>
+      
+    </div>
+
     <form>
         <div class="form-control">
             <label for="text">Your Name</label>
@@ -8,10 +39,16 @@
             <label for="text">Your Email</label>
             <input type="text" name="text" id="text" placeholder="Add Email" />
         </div>
-        <div class="form-control">
+        <!-- <div class="form-control">
             <label for="text">Your message</label>
             <input type="text" name="text" id="text" placeholder="Add Message" />
+        </div> -->
+        <div class="form-control">
+            <label for="text">Your message</label>
+            <p><textarea rows="10" cols="60" name="text"></textarea></p>
         </div>
-        <input type="submit" value="Send Message" class="btn btn-block">
+        <div fxLayoutAlign="center">
+            <input id="submit" type="submit" value="Send Message" class="btn">
+        </div>
     </form>
 </div>

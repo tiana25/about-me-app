@@ -10,21 +10,22 @@
                 <button routerLink="/" mat-button class="btn">Home</button>
                 <button routerLink="/about" mat-button class="btn">About Me</button>
                 <button routerLink="/contact" mat-button class="btn">Contact Me</button>
+                <button routerLink="/feedback" mat-button class="btn">Leave Feedback</button>
             </div>
         </div>
 
         <div>
             <button mat-icon-button >
-                <mat-icon *ngIf="deviceXs">more_vert</mat-icon>
+                <mat-icon id="menu_button" *ngIf="deviceXs">more_vert</mat-icon>
                 <span class="logo" *ngIf="!deviceXs">Menu</span>
             </button>
         </div>
     </mat-toolbar-row>
 
     <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
-            <button mat-button class="btn">Home</button>
-            <button mat-button class="btn">About Me</button>
-            <button mat-button class="btn">Contact Me</button>
+        <button routerLink="/" mat-button class="btn">Home</button>
+        <button routerLink="/about" mat-button class="btn">About Me</button>
+        <button routerLink="/contact" mat-button class="btn">Contact Me</button>
     </mat-toolbar-row>
 
 </mat-toolbar>

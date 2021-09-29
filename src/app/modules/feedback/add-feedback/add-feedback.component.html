@@ -1,0 +1,15 @@
+<form class="add-feedback" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="text">Your Name</label>
+        <input type="text" name="text"  [(ngModel)]="name" id="text" placeholder="Add name">
+    </div>
+    <div class="form-control">
+        <label for="job">Your Job Position</label>
+        <input type="text" name="job" [(ngModel)]="job" id="job" placeholder="Add job position">
+    </div>
+    <div class="form-control">
+        <label for="feedback">Your Feedback:)</label>
+        <input type="text" name="feedback" [(ngModel)]="feedback" id="feedback" placeholder="Add your feedback">
+    </div>
+    <input type="submit" value="Upload your feedback!" class="btn btn-block">
+</form>
