@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Feedback } from '../Feedback';
+import { Contact } from '../Contact';
 import { FEEDBACKS } from 'src/app/mock-feedback';
 
 import { Observable, of } from 'rxjs';
@@ -19,6 +20,7 @@ const httpOptions = {
 export class FeedbackService {
 
   private apiUrl = 'http://localhost:5000/feedbacks'
+  private apiUrl2 = 'http://localhost:5000/contacts'
 
   constructor(private http:HttpClient) { }
 
@@ -33,6 +35,10 @@ export class FeedbackService {
 
   addFeedback(feedback: Feedback):Observable<Feedback>{
     return this.http.post<Feedback>(this.apiUrl, feedback, httpOptions)
+  }
+
+  addContact(contact: Contact):Observable<Contact>{
+    return this.http.post<Contact>(this.apiUrl2, contact, httpOptions)
   }
 
 }

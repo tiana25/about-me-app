@@ -29,26 +29,5 @@
         </div>
       
     </div>
-
-    <form>
-        <div class="form-control">
-            <label for="text">Your Name</label>
-            <input type="text" name="text" id="text" placeholder="Add Name" />
-        </div>
-        <div class="form-control">
-            <label for="text">Your Email</label>
-            <input type="text" name="text" id="text" placeholder="Add Email" />
-        </div>
-        <!-- <div class="form-control">
-            <label for="text">Your message</label>
-            <input type="text" name="text" id="text" placeholder="Add Message" />
-        </div> -->
-        <div class="form-control">
-            <label for="text">Your message</label>
-            <p><textarea rows="10" cols="60" name="text"></textarea></p>
-        </div>
-        <div fxLayoutAlign="center">
-            <input id="submit" type="submit" value="Send Message" class="btn">
-        </div>
-    </form>
+    <app-add-contact (onAddContact)="addContact($event)"></app-add-contact>
 </div>
