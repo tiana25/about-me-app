@@ -4,25 +4,19 @@
       "id": 1,
       "name": "Maria Lypovetska",
       "job": "Frontend dev",
-      "feedback": "I really admire you!"
+      "feedback": "You're doing a great job! Good luck with your career:)"
     },
     {
       "id": 2,
       "name": "Ivan Mironov",
       "job": "Frontend dev",
-      "feedback": "Well done! You're doing an amazing job:)"
+      "feedback": "Well done! Do your best every day!"
     },
     {
       "id": 3,
       "name": "Vlad Demin",
       "job": "Backend dev",
-      "feedback": "You're awesome! Good luck to you in all your endeavors"
-    },
-    {
-      "name": "mdm",
-      "job": "mcke",
-      "feedback": "mcke",
-      "id": 4
+      "feedback": "Good luck to you in all your endeavors!"
     }
   ]
 }

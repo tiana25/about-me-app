@@ -9,12 +9,14 @@ import { MatCardModule } from '@angular/material/card';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FeedbackItemComponent } from './feedback-item/feedback-item.component';
 import { AddFeedbackComponent } from './add-feedback/add-feedback.component';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
     FeedbackComponent,
     FeedbackItemComponent,
-    AddFeedbackComponent
+    AddFeedbackComponent,
+    ButtonComponent
   ],
   imports: [
     CommonModule,

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FeedbackService } from 'src/app/services/feedback.service';
 import { Feedback } from '../../Feedback';
+import { UiService } from 'src/app/services/ui.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-feedback',
@@ -9,9 +11,14 @@ import { Feedback } from '../../Feedback';
 })
 export class FeedbackComponent implements OnInit {
 
+  showAddFeedback:boolean = false;
+  subscription!:Subscription;
+
   feedbacks: Feedback[] = [];
 
-  constructor(private feedbackService: FeedbackService) { }
+  constructor(private feedbackService: FeedbackService, private uiService:UiService) {
+    this.subscription = this.uiService.onToggle().subscribe((value) => this.showAddFeedback = value)
+   }
 
   ngOnInit(): void {
     this.feedbackService.getTasks().subscribe((feedbacks)=>(this.feedbacks = feedbacks));
@@ -29,5 +36,8 @@ export class FeedbackComponent implements OnInit {
       (feedback)=>(this.feedbacks.push(feedback)));
   }
 
+  toggleAddFeedback(){
+    this.uiService.toggleAddFeedback();
+  }
 
 }

@@ -1,4 +1,11 @@
 .mat-card{
     margin-bottom:30px;
     margin-top:50px;
+    background-color: #E0C3FC;
+}
+.mat-card-content{
+    font-family: "Poppins", sans-serif!important;
+}
+.mat-card-title{
+    font-family: "Poppins", sans-serif!important;
 }

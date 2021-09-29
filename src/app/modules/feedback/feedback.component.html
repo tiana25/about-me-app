@@ -1,5 +1,10 @@
 <div class="container center">
     <div class="title-item">Leave Feedback!</div>
+    <app-button 
+    color="{{showAddFeedback? '#757BC8':'#E0C3FC'}}"
+    text="{{showAddFeedback? 'Close':'Add feedback!'}}"
+    (btnClick)="toggleAddFeedback()"
+    ></app-button>
     <app-add-feedback (onAddFeedback)="addFeedback($event)"></app-add-feedback>
     <app-feedback-item 
     *ngFor="let feedback of feedbacks" 

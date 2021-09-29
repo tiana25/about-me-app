@@ -20,17 +20,9 @@
     <div class="skills">
         <div class="title-item">My Skills</div>
         <ul>
-            <li>
-                <h3>HTML5</h3>
-                <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-            </li>
-            <li>
-                <h3>CSS3</h3>
-                <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
-            </li>
-            <li>
-                <h3>JQuery</h3>
-                <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+            <li *ngFor="let skill of skills">
+                <h3>{{skill.skill}}</h3>
+                <mat-progress-bar mode="determinate" value=" {{skill.val}}"></mat-progress-bar>
             </li>
         </ul>
     </div>
@@ -38,17 +30,9 @@
     <div class="languages">
         <div class="title-item">Languages</div>
         <ul>
-            <li>
-                <h3>English</h3>
-                <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
-            </li>
-            <li>
-                <h3>Ukrainian</h3>
-                <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
-            </li>
-            <li>
-                <h3>Russian</h3>
-                <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
+            <li *ngFor="let lang of languages">
+                <h3>{{lang.lan}}</h3>
+                <mat-progress-bar mode="determinate" value="{{lang.val}}"></mat-progress-bar>
             </li>
         </ul>
     </div>

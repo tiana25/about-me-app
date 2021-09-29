@@ -1,5 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Feedback } from 'src/app/Feedback';
+import { Subscription } from 'rxjs';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-add-feedback',
@@ -8,6 +10,8 @@ import { Feedback } from 'src/app/Feedback';
 })
 export class AddFeedbackComponent implements OnInit {
 
+  showAddFeedback!:boolean;
+  subscription!: Subscription;
 
   @Output() onAddFeedback:EventEmitter<Feedback> = new EventEmitter();
 
@@ -15,7 +19,9 @@ export class AddFeedbackComponent implements OnInit {
   job!:string;
   feedback!:string;
 
-  constructor() { }
+  constructor(private uiService:UiService) { 
+    this.subscription = this.uiService.onToggle().subscribe((value) => this.showAddFeedback = value);
+  }
 
   ngOnInit(): void {
   }
